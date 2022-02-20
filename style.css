@@ -1,0 +1,41 @@
+
+body{
+background-image: url("Entrance.jpeg");
+}
+
+.runner{
+/*this is the image which is animated below*/
+/* background: url("Cartoon.png") no-repeat; */
+
+background: url("character6-removebg-preview.png")  no-repeat;
+/* width: 185px;
+height: 290px; */
+width: 85px;
+/* height:92px; */
+height: 115px;
+margin-left: 500px;
+
+
+
+/*code below shows the speed of the steps*/
+animation: walk 0.5s steps(6) infinite,
+forward 8s linear infinite;
+}
+
+/*Code below use for walking animation*/
+@keyframes walk{
+background-position: 0px; /* No effect of changing this percentage */
+0%{  /* No effect of changing this percentage */
+}
+100%{  /* No effect of changing this percentage */
+/* background-position: -585px;  /* This is negative total width of all the image */ */
+}
+}
+@keyframes forward{
+0%{
+transform: translateY(300px);
+}
+100%{
+transform: translateY(200px);
+}
+}
