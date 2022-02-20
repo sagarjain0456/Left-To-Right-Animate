@@ -1,0 +1,36 @@
+body{
+background: pink;
+}
+.road{
+border-bottom: 7px dashed black;
+}
+.runner{
+/*this is the image which is animated below*/
+background: url("stickman-removebg-preview.png") no-repeat;
+/* width: 185px; */
+width: 90px;
+height: 192px;
+
+
+/*code below shows the speed of the steps*/
+animation: walk 1.2s steps(6) infinite,
+forward 5s linear infinite;
+}
+
+/*Code below use for walking animation*/
+@keyframes walk{
+0%{
+background-position: 0px;
+}
+100%{
+background-position: -621px;
+}
+}
+@keyframes forward{
+0%{
+transform: translateX(-100px);
+}
+100%{
+transform: translateX(1200px);
+}
+}
